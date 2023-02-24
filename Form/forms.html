@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <form>
+        <style>
+            body{
+                background-image: url(crowd.jpg);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;                             
+            }
+
+            form{
+                width: 550px;
+                border-radius: 3cm;
+                padding-top: 70px;
+                padding-bottom: 70px;
+                padding-left: 60px;
+                padding-right: 60px;
+                background-color: darkgrey;
+                background-repeat: no-repeat;      
+                background-image: url(crowd.jpg); 
+                box-shadow: 0 0 10px rgba(0, 0, 0,1);
+            }
+
+            textarea{
+                width: 100%;
+                height: 50px;
+                background: transparent;
+                border-color: antiquewhite;
+                color: white;
+            }
+
+            input{
+                font-size: 13px;
+                background: transparent;
+                cursor: pointer;
+                color: white; border-color: antiquewhite ;
+            }
+
+            select{
+                background: transparent;
+                color: white;
+                border-color: antiquewhite;
+            }
+
+            option{
+                background-image: url(crowd.jpg);
+                color: black; border-color: antiquewhite;
+            }
+
+            fieldset{
+                border-color: antiquewhite;
+            }
+
+            button{
+                background-color: transparent;
+                color: white;
+                border-color: antiquewhite;
+                font-size: large;
+            }
+
+        </style>
+        <fieldset>
+            <table>
+
+                <tr>
+                    <th colspan="2" > <h1 style="color: aqua;font-size: 200% ;">EXO Planet #6 Ticket Registration Form</h1> <br> <br> </th>
+                </tr>
+
+                <tr>
+                    <td><label style="color: aliceblue;">Lastname:</label> </td>
+                    <td><input type="text" required size="28" required>  </td>            
+                </tr>
+
+                <tr>
+                    <td><label style="color: aliceblue;">First Name:</label> </td>
+                    <td><input type=" text" required size="28" required> </td>
+
+                </tr>
+
+                <tr>
+                    <td><label style="color: aliceblue;">Middle Name:</label></td>
+                    <td><input type="text" required size="28" required></tr>
+                </tr>
+
+                <tr>
+                    <td><label style="color: aliceblue;">E-mail:</label></td>
+                    <td><input type="email" required size="28" required></td>
+                </tr>
+
+                <tr>
+                    <td><label style="color: aliceblue;">Phone number:</label></td>
+                    <td><input type="tel" readonly value="+63" size="1 required"/>
+                    <input type="tel" maxlength="10" required size="21"/></td>
+                </tr>
+
+                <tr>
+                    <td><label style="color: aliceblue;">Seating options</label></td>
+                    <td><select name="Seating options" required>
+                        <option value="Standing">Standing - ₱15,000 </option>
+                        <option value="Seated">Seated - ₱15,000 </option>
+                        <option value="Seated w/ limited views">Seated w/ limited view - ₱13,500 </option>
+                        <option value="Upper Box">Upper box - ₱9,500 </option>
+                        <option value="Upper Box w/ limited views">Upper box w/ limited views - ₱7,500 </option>
+                        <option value="Gen Ad">Gen Ad - ₱5,500 </option>
+                        <option value="Gen Ad w/ limited views">Gen Ad w/ limited views - ₱5,500 </option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td><label style="color: aliceblue;">Number of tickets:</label></td>
+                    <td><input type="number" min="1" max="5" required/></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="date" min="2023-06-22" max="2023-06-24"/> <br> <br></td> 
+                </tr>
+
+                <tr>
+
+                    <tr>
+                        <td><label style="color: aliceblue;">Any questions?</label> <br></td>
+                    </tr>
+                    <th colspan="2">
+                        <textarea cols="40" rows="10" placeholder="Type here..."></textarea>
+                    </th>
+                </tr>
+            </table>
+            <br>
+
+            <center><button>Submit</button></center>
+            <center><input type="reset"></center>
+
+        </fieldset>       
+    </form>
+</html>
+ 
